@@ -1,63 +1,67 @@
+## __アプリケーション名__
+***
+CHAPUTAMU
 
-# テーブル設計
+## __アプリケーション概要__
+***
+k-popという共通の趣味をシェアし、ユーザー同士でコミュニケーションをとることができる。
 
-## users テーブル
+## __URL__
+***
 
-| Column             | Type   | Options                   |
-| ------------------ | ------ | ------------------------- |
-| nickname           | string | null: false               |
-| email              | string | null: false, unique: true |
-| encrypted_password | string | null: false               |
-| last_name          | string | null: false               |
-| first_name         | string | null: false               |
-| birth_date         | date   | null: false               |
-| self_introduction  | string | null: false               |
-| favorite_group     | string | null: false               |
-| favorite_member    | string | null: false               |
 
-### Association
+## __テスト用アカウント__
+***
+* Basic認証パスワード : 
+* Basic認証ID : 
+* メールアドレス : 
+* パスワード : 
 
-- has_many :room_users
-- has_many :rooms, through: :room_users
-- has_many :messages
-- has_many :favorites
+## __利用方法__
+***
+## 
 
-## rooms テーブル
+## __アプリケーションを作成した背景__
+***
 
-| Column             | Type   | Options     |
-| ------------------ | ------ | ----------- |
-| room_name          | string | null: false |
-| group_name         | string | null: false |
-| introduction       | string | null: false |
 
-### Association
+## __洗い出した要件__
+***
+https://docs.google.com/spreadsheets/d/15PeXwiiNaicE8ujspqZmP9Vvgfn0B9FRboaTiuFdvUI/edit#gid=982722306
 
-- has_many :room_users
-- has_many :users, through: :room_users
-- has_many :messages
-- has_many :favorites
+## __実装した機能についての画像やGIFおよびその説明__
+***
 
-## room_users テーブル
 
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| room   | references | null: false, foreign_key: true |
+## __実装予定の機能__
+***
 
-### Association
 
-- belongs_to :room
-- belongs_to :user
+## __データベース設計__
+***
+[![Image from Gyazo](https://i.gyazo.com/01b362ce198a2a02dd580515a45771d4.jpg)](https://gyazo.com/01b362ce198a2a02dd580515a45771d4)
 
-## messages テーブル
+## __画面遷移図__
+***
+[![Image from Gyazo](https://i.gyazo.com/d96b61ef8aecdd98bbcf5c43819c9f2e.jpg)](https://gyazo.com/d96b61ef8aecdd98bbcf5c43819c9f2e)
 
-| Column  | Type       | Options                        |
-| ------- | ---------- | ------------------------------ |
-| content | string     |                                |
-| user    | references | null: false, foreign_key: true |
-| room    | references | null: false, foreign_key: true |
+## __開発環境__
+***
+* フロントエンド
+* バックエンド
+* インフラ
+* テスト
+* テキストエディタ
+* タスク管理
 
-### Association
+## __ローカルでの動作方法__
+***
+以下のコマンドを順に実行してください。  
+% git clone https://github.com/tokunagatensei/chaputamu  
+% cd chaputamu  
+% bundle install  
+% yurn install
 
-- belongs_to :room
-- belongs_to :user
+## __工夫したポイント__
+***
+
