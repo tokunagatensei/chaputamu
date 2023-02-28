@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  height: 70px;
+  width: 100vw;
+  padding: 2vh 2vw 2vh 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a4dcde;
+}
+
+.header-logo a{
+  font-size: 30px;
+  color: black;
+}
+
+
+.header-contents {
+  height: 40px;
+  width: 30vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-mypage {
+  width: 40px;
+}
+
+.user-login {
+  width: 55px;
+}
+
+.user-sign-up {
+  width: 55px;
+}
+
+.header-rooms {
+  width: 40px;
+}
+
+.header-calendar {
+  width: 40px;
+}

@@ -1,0 +1,18 @@
+<header class='header'>
+
+  <div class='header-logo'>
+    <a href="#">Chaputamu</a>
+  </div>
+
+  <div class='header-contents'>
+    <%# if user_signed_in? %>
+      <%= link_to image_tag("header-mypage.png", class:"header-mypage"), "#" %>
+    <%# else %>
+      <%# link_to image_tag("header_user_login.png", class:"user-login"), "#" %>
+      <%# link_to image_tag("header_user_sign_up.png", class:"user-sign-up"), "#" %>
+    <%# end %>
+    <%= link_to image_tag("header-rooms.png", class:"header-rooms"), "#" %>
+    <%= link_to image_tag("header-calendar.png", class:"header-calendar"), "#" %>
+  </div>
+
+</header>
