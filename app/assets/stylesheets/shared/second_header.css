@@ -1,0 +1,14 @@
+.second-header {
+  height: 70px;
+  width: 100vw;
+  padding: 2vh 2vw 2vh 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a4dcde;
+}
+
+.second-header-logo a{
+  font-size: 30px;
+  color: black;
+}
