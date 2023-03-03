@@ -13,7 +13,6 @@
   color: black;
 }
 
-
 .header-contents {
   height: 40px;
   width: 30vw;
@@ -22,21 +21,26 @@
 }
 
 .header-mypage {
+  height: 40px;
   width: 40px;
 }
 
 .user-login {
+  height: 55px;
   width: 55px;
 }
 
 .user-sign-up {
+  height: 55px;
   width: 55px;
 }
 
 .header-rooms {
+  height: 40px;
   width: 40px;
 }
 
 .header-calendar {
+  height: 40px;
   width: 40px;
 }
