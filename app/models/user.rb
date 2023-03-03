@@ -11,6 +11,6 @@ class User < ApplicationRecord
     validates :birth_date
   end
 
-  validates :password,            format: { with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i }
+  validates :password,            format: { with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i }, allow_blank: true
 
 end
