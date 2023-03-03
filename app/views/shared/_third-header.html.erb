@@ -1,0 +1,12 @@
+<header class='third-header'>
+
+  <div class='third-header-logo'>
+    <%= link_to 'Chaputamu', root_path%>
+  </div>
+
+  <div class='third-header-contents'>
+    <%= link_to image_tag('my-page-exit.png', class:'user-exit'), destroy_user_session_path, method: :delete %>
+    <%= link_to image_tag('my-page-edit.png', class:'user-edit'), edit_user_path(current_user) %>
+  </div>  
+
+</header>

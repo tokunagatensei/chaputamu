@@ -1,0 +1,30 @@
+.third-header {
+  height: 70px;
+  width: 100vw;
+  padding: 2vh 4vw 2vh 4vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #a4dcde;
+}
+
+.third-header-logo a{
+  font-size: 30px;
+  color: black;
+}
+
+.third-header-contents {
+  height: 40px;
+  width: 30vw;
+  display: flex;
+  justify-content: right;
+}
+
+.user-exit {
+  width: 38px;
+  margin-right: 7vw;
+}
+
+.user-edit {
+  width: 40px;
+}

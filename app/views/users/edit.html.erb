@@ -1,0 +1,54 @@
+<%= render 'shared/second-header'%>
+
+<%= form_with model: current_user, class: 'edit-main', local: true do |f| %>
+  <div class='form-wrap'>
+    <div class='form-header'>
+      <h1 class='form-header-text'>
+        Edit Account
+      </h1>
+    </div>
+
+    <%# render 'shared/error_messages', model: f.object %>
+
+    <%# nickname %>
+    <div class='form-group'>
+      <div class='form-text-wrap'>
+        <label class='form-text'>ニックネーム</label>
+        <span class='indispensable'>必須</span>
+      </div>
+      <%= f.text_area :nickname, class:'input-default', id:'nickname', placeholder:"例) k-pop太郎", maxlength:'40' %>
+    </div>
+    <%# nickname %>
+
+    <%# favorite_group %>
+    <div class='form-group'>
+      <div class='form-text-wrap'>
+        <label class='form-text'>好きなグループ</label>
+      </div>
+      <%= f.text_area :favorite_group, class:'input-default', id:'favorite_group', placeholder:"例) Blackpink", maxlength:'40' %>
+    </div>
+    <%# favorite_group %>
+
+    <%# favorite_member %>
+    <div class='form-group'>
+      <div class='form-text-wrap'>
+        <label class='form-text'>好きなメンバー</label>
+      </div>
+      <%= f.text_area :favorite_member, class:'input-default', id:'favorite_member', placeholder:"例) ジェニ", maxlength:'40' %>
+    </div>
+    <%# favorite_member %>
+
+    <%# self_introduction %>
+    <div class='form-group'>
+      <div class='form-text-wrap'>
+        <label class='form-text'>簡単な自己紹介</label>
+      </div>
+      <%= f.text_area :self_introduction, class:'input-self_introduction', id:'self_introduction', placeholder:"例) よろしくお願いします！", maxlength:'400' %>
+    </div>
+    <%# self_introduction %>
+
+    <div class='edit-btn'>
+      <%= f.submit "Update", class: 'edit-red-btn'%>
+    </div>
+  </div>
+<% end %>

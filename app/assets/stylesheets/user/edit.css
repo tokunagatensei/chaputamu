@@ -1,0 +1,23 @@
+.edit-main {
+  width: 100%;
+  min-width: 900px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.edit-btn {
+  width: 30%;
+  margin: 30px auto 0 auto;
+}
+
+.edit-red-btn {
+  width: 100%;
+  background: #a4dcde;
+  border: 1px solid #a4dcde;
+  color: black;
+  line-height: 48px;
+  font-size: 14px;
+  cursor: pointer;
+}
