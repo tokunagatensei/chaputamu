@@ -1,0 +1,54 @@
+<%= render 'shared/second-header'%>
+
+<%= form_with model: @room, local: true do |f| %>
+  <div class='form-wrap'>
+    <div class='form-header'>
+      <h1 class='form-header-text'>
+        Create Room
+      </h1>
+    </div>
+
+    <%# render 'shared/error_messages', model: f.object %>
+
+    <%# room_name %>
+    <div class='form-group'>
+      <div class='form-text-wrap'>
+        <label class='form-text'>チャットルーム名</label>
+        <span class='indispensable'>必須</span>
+      </div>
+      <%= f.text_area :room_name, class:'input-default', id:'room_name', placeholder:"例) チャットルーム名", maxlength:'40' %>
+    </div>
+    <%# room_name %>
+
+    <%# group_name %>
+    <div class='form-group'>
+      <div class='form-text-wrap'>
+        <label class='form-text'>グループ名</label>
+      </div>
+      <%= f.text_area :group_name, class:'input-default', id:'group_name', placeholder:"例) Blackpink", maxlength:'40' %>
+    </div>
+    <%# group_name %>
+
+    <%# introduction %>
+    <div class='form-group'>
+      <div class='form-text-wrap'>
+        <label class='form-text'>紹介文</label>
+      </div>
+      <%= f.text_area :introduction, class:'input-default', id:'introduction', placeholder:"例) ジェニ", maxlength:'40' %>
+    </div>
+    <%# introduction %>
+
+    <%# self_introduction %>
+    <div class='form-group'>
+      <div class='form-text-wrap'>
+        <label class='form-text'>簡単な自己紹介</label>
+      </div>
+      <%= f.text_area :self_introduction, class:'input-self_introduction', id:'self_introduction', placeholder:"例) よろしくお願いします！", maxlength:'400' %>
+    </div>
+    <%# self_introduction %>
+
+    <div class='create-btn'>
+      <%= f.submit "Create Room", class: 'create-red-btn'%>
+    </div>
+  </div>
+<% end %>
