@@ -1,9 +1,32 @@
 <%= render 'shared/third-header'%>
 
-<div class="header-name">
-  <div>
-    <%= current_user.nickname %>
+<div class='my-page-main'>
+  <div class='my-page-contents'>
+
+    <%# チャットルーム一覧 %>
+    <div class='contents-name'>
+      <%= current_user.nickname %>
+    </div>
+    <%# チャットルーム一覧 %>
+
+    <%# 新規チャットルーム作成 %>
+    <div class='contents-create-room'>
+      <%= link_to 'Create room', new_room_path%>
+    </div>
+    <%# 新規チャットルーム作成 %>
+
+    <%# 作成したチャットルーム一覧 %>
+    <div class='contents-rooms'>
+      <% current_user.rooms.each do |room| %>
+        <div class='room'>
+          <div class='room-name'>
+            <%= link_to room.room_name, '#'%>
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <%# 作成したチャットルーム一覧 %>
+
   </div>
 </div>
-
 
