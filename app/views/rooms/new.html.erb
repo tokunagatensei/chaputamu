@@ -24,6 +24,7 @@
     <div class='form-group'>
       <div class='form-text-wrap'>
         <label class='form-text'>グループ名</label>
+        <span class='indispensable'>必須</span>
       </div>
       <%= f.text_area :group_name, class:'input-default', id:'group_name', placeholder:"例) Blackpink", maxlength:'40' %>
     </div>
@@ -33,11 +34,13 @@
     <div class='form-group'>
       <div class='form-text-wrap'>
         <label class='form-text'>紹介文</label>
+        <span class='indispensable'>必須</span>
       </div>
       <%= f.text_area :introduction, class:'input_introduction', id:'introduction', placeholder:"例) よろしくお願いします！", maxlength:'400' %>
     </div>
     <%# introduction %>
-
+    
+    <input name="room[user_ids][]" type="hidden" value=<%= current_user.id %>>
     <div class='create-btn'>
       <%= f.submit "Create Room", class: 'create-red-btn'%>
     </div>
