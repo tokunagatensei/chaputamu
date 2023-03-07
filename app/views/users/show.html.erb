@@ -1,32 +1,58 @@
 <%= render 'shared/third-header'%>
 
 <div class='my-page-main'>
-  <div class='my-page-contents'>
-
-    <%# チャットルーム一覧 %>
-    <div class='contents-name'>
-      <%= current_user.nickname %>
-    </div>
-    <%# チャットルーム一覧 %>
-
-    <%# 新規チャットルーム作成 %>
-    <div class='contents-create-room'>
-      <%= link_to 'Create room', new_room_path%>
-    </div>
-    <%# 新規チャットルーム作成 %>
-
-    <%# 作成したチャットルーム一覧 %>
-    <div class='contents-rooms'>
-      <% current_user.rooms.each do |room| %>
-        <div class='room'>
-          <div class='room-name'>
-            <%= link_to room.room_name, '#'%>
-          </div>
-        </div>
-      <% end %>
-    </div>
-    <%# 作成したチャットルーム一覧 %>
-
+  <div class='my-page-header'>
+    <h1 class='my-page-header-text'>
+      MY PAGE
+    </h1>
   </div>
+
+  <%# プロフィール %>
+  <div class='my-page-profile'>
+    <label class="my-page-profile-text">Profile</label>
+    <div class='profile-contents'>
+      <label class="profile-text">Nickname</label>
+      <div class='profile-content'>
+        <%= current_user.nickname %>
+      </div>
+    </div>
+    <div class='profile-contents'>
+      <label class="profile-text">Birthday</label>
+      <div class='profile-content'>
+        <%= current_user.birth_date %>
+      </div>
+    </div>
+    <div class='profile-contents'>
+      <label class="profile-text">好きなグループ</label>
+      <div class='profile-content'>
+        <%= current_user.favorite_group %>
+      </div>
+    </div>
+    <div class='profile-contents'>
+      <label class="profile-text">好きなメンバー</label>
+      <div class='profile-content'>
+        <%= current_user.favorite_member %>
+      </div>
+    </div>
+    <div class='profile-contents'>
+      <label class="profile-text">簡単な自己紹介</label>
+      <div class='profile-content'>
+        <%= current_user.self_introduction %>
+      </div>
+    </div>
+  </div>
+  <%# プロフィール %>
+
+  <%# 作成したチャットルーム一覧 %>
+  <div class='my-page-rooms'>
+    <% current_user.rooms.each do |room| %>
+      <div class='room'>
+        <div class='room-name'>
+          <%= link_to room.room_name, '#'%>
+        </div>
+      </div>
+    <% end %>
+  </div>
+  <%# 作成したチャットルーム一覧 %>
 </div>
 

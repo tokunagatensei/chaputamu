@@ -1,8 +1,8 @@
 .create-room-main {
   width: 100%;
   min-width: 900px;
-  height: 100%;
-  background-color: white;
+  height: 100vh;
+  background-color: skyblue;
   display: flex;
   justify-content: center;
 }

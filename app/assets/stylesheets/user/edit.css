@@ -2,7 +2,7 @@
   width: 100%;
   min-width: 900px;
   height: 100%;
-  background-color: white;
+  background-color: skyblue;
   display: flex;
   justify-content: center;
 }
@@ -14,8 +14,9 @@
 
 .edit-red-btn {
   width: 100%;
-  background: #a4dcde;
-  border: 1px solid #a4dcde;
+  background: #00f7ff;
+  border: 3px solid #f5f5f5;
+  border-style: groove;
   color: black;
   line-height: 48px;
   font-size: 14px;
