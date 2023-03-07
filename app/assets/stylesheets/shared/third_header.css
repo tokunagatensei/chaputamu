@@ -5,7 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #a4dcde;
+  background-color: skyblue;
 }
 
 .third-header-logo a{
@@ -15,9 +15,25 @@
 
 .third-header-contents {
   height: 40px;
-  width: 30vw;
+  width: 50vw;
   display: flex;
   justify-content: right;
+}
+
+.user-create-room{
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #00f7ff;
+  border: 3px solid #f5f5f5;
+  border-style: groove;
+  text-decoration: none;
+  color: black;
+  line-height: 48px;
+  font-size: 15px;
+  cursor: pointer;
+  margin-right: 7vw;
 }
 
 .user-exit {

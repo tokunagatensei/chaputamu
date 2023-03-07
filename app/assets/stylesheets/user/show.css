@@ -1,0 +1,69 @@
+.my-page-main{
+  height: 100vh;
+  width: 100%;
+  min-width: 900px;
+  padding: 0 50px 50px 50px;
+  background-color: skyblue;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-page-header{
+  width: 100%;
+  height: 70px;
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.my-page-header-text{
+  width: 70%;
+  margin: auto;
+  line-height: 70px;
+  font-weight: bold;
+  background-color: rgb(169, 222, 244);
+  border: 3px solid #f5f5f5;
+  border-style: groove;
+}
+
+.my-page-profile{
+  width: 70%;
+  display: flex;
+  flex-flow: column;
+  background-color: rgb(169, 222, 244);
+  margin: 20px auto 40px;
+  padding: 20px 0;
+  border: 3px solid #f5f5f5;
+  border-style: groove;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-page-profile-text{
+  height: 50px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.profile-contents{
+  width: 80%;
+  padding-top: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.profile-text{
+  width: 50%;
+  height: 40px;
+  font-size: 14px;
+}
+
+.profile-content{
+  width: 100%;
+  font-size: 12px;
+}

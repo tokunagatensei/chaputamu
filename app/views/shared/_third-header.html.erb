@@ -5,6 +5,7 @@
   </div>
 
   <div class='third-header-contents'>
+    <%= link_to 'Create Room', new_room_path, class:'user-create-room'%>
     <%= link_to image_tag('my-page-exit.png', class:'user-exit'), destroy_user_session_path, method: :delete %>
     <%= link_to image_tag('my-page-edit.png', class:'user-edit'), edit_user_path(current_user) %>
   </div>
