@@ -1,16 +1,16 @@
 .third-header {
-  height: 70px;
+  height: 80px;
   width: 100vw;
-  padding: 2vh 4vw 2vh 4vw;
+  padding: 2vh 2vw 2vh 2vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: skyblue;
 }
 
-.third-header-logo a{
-  font-size: 30px;
-  color: black;
+.header-logo {
+  height: 65px;
+  width: 200px;
 }
 
 .third-header-contents {
@@ -44,4 +44,5 @@
 
 .user-edit {
   width: 40px;
+  margin-right: 20px;
 }
