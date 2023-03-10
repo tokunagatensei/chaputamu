@@ -11,7 +11,7 @@ class MessagesController < ApplicationController
     if @message.save
       redirect_to room_messages_path(@room)
     else
-      @messages = @room.messages.includes(:user)
+      @messages = @room.messages.includes(:user).order('created_at DESC')
       render :index
     end
   end
