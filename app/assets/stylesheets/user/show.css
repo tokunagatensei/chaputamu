@@ -1,8 +1,7 @@
 .my-page-main{
-  height: 100vh;
   width: 100%;
   min-width: 900px;
-  padding: 80px 50px;
+  padding: 60px 50px;
   background-color: skyblue;
   display: flex;
   flex-flow: column;
@@ -15,7 +14,6 @@
   height: 70px;
   text-align: center;
   font-size: 22px;
-  margin-top: 40px;
 }
 
 .my-page-header-text{

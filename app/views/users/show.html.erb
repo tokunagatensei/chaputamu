@@ -45,11 +45,28 @@
 
   <%# 作成したチャットルーム一覧 %>
   <div class='my-page-rooms'>
+    <label class="my-page-rooms-text">Created Rooms</label>
     <% current_user.rooms.each do |room| %>
-      <div class='room'>
+      <div class='room-contents'>
+      <label class="room-text">ルーム名</label>
         <div class='room-name'>
           <%= link_to room.room_name, room_messages_path(room) %>
         </div>
+    <div class='room-contents'>
+      <label class="room-text">好きなグループ</label>
+      <div class='profile-content'>
+        <%= current_user.favorite_group %>
+      </div>
+    </div>
+    <div class='room-contents'>
+      <label class="room-text">簡単な自己紹介</label>
+      <div class='profile-content'>
+        <%= current_user.self_introduction %>
+      </div>
+    </div>
+      </div>
+      <div class='destroy-room-btn'>
+        <%= link_to '削除', room_path(room), method: :delete %>
       </div>
     <% end %>
   </div>
