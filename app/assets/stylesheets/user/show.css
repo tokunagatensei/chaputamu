@@ -32,7 +32,7 @@
   display: flex;
   flex-flow: column;
   background-color: rgb(169, 222, 244);
-  margin: 20px auto 40px;
+  margin: 20px auto 20px;
   padding: 20px 0;
   border: 3px solid #f5f5f5;
   border-style: groove;
@@ -67,4 +67,64 @@
 .profile-content{
   width: 100%;
   font-size: 12px;
+}
+
+.chat-rooms{
+  width: 90%;
+  display: flex;
+  flex-flow: column;
+}
+
+.page-rooms-text{
+  text-align: center;
+  font-size: 22px;
+  margin: 20px;
+}
+
+.room-contents{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(169, 222, 244);
+  padding: 10px 0;
+  margin-bottom: 10px;
+  border: 3px solid #f5f5f5;
+  border-style: groove;
+  border-radius: 20px;
+}
+
+.room-text{
+  font-size: 10px;
+}
+
+.room-name{
+  font-size: 15px;
+  text-decoration: none;
+  padding-top: 10px;
+}
+
+.profile-content{
+  padding: 10px 10px 0 0;
+}
+
+.open-room-btn{
+  font-size: 15px;
+  color: rgb(90, 88, 232);
+  text-decoration: none;
+  background-color: rgb(191, 240, 221);
+  padding: 10px 20px;
+  border: 3px solid #f5f5f5;
+  border-style: groove;
+  border-radius: 10px;
+}
+
+.destroy-room-btn{
+  font-size: 15px;
+  color: rgb(191, 240, 221);
+  text-decoration: none;
+  background-color: rgb(90, 88, 232);
+  padding: 10px 20px;
+  border: 3px solid #f5f5f5;
+  border-style: groove;
+  border-radius: 10px;
 }
