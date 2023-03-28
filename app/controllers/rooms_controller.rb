@@ -1,7 +1,7 @@
 class RoomsController < ApplicationController
 
   def index
-    @rooms = Room.includes(:user).order('created_at DESC')
+    @rooms = Room.all.order('created_at DESC')
   end
 
   def new
@@ -11,10 +11,16 @@ class RoomsController < ApplicationController
   def create
     @room = Room.new(room_params)
     if @room.save
-      redirect_to root_path
+      redirect_to room_messages_path(@room)
     else
       render :new
     end
+  end
+
+  def destroy
+    room = Room.find(params[:id])
+    room.destroy
+    redirect_to "/users/#{current_user.id}"
   end
 
   private

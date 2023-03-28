@@ -1,5 +1,11 @@
 .main {
   height: calc(100vh - 70px);
-  width: 100vw;
-  background: #fbfbfb;
+  width: 100%;
+  min-width: 900px;
+  padding: 60px 50px;
+  background-color: skyblue;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
 }
+

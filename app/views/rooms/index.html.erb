@@ -1,6 +1,32 @@
 <%= render 'shared/header' %>
 <div class='main'>
   <%# チャットルーム一覧 %>
-
+  <div class='chat-rooms'>
+    <% @rooms.each do |room| %>
+      <div class='room-contents'>
+        <div class='room-content'>
+          <label class="room-text">Name</label>
+          <div class='room-name'>
+            <%= room.room_name %>
+          </div>
+        </div>
+        <div class='room-content'>
+          <label class="room-text">Group</label>
+          <div class='profile-content'>
+            <%= room.group_name %>
+          </div>
+        </div>
+        <div class='room-content'>
+          <label class="room-text">Introduction</label>
+          <div class='profile-content'>
+            <%= room.introduction %>
+          </div>
+        </div>
+          <div class='open-room'>
+            <%= link_to '開く', room_messages_path(room), class:'open-room-btn' %>
+          </div>
+      </div>
+    <% end %>
+  </div>
   <%# チャットルーム一覧 %>
 </div>

@@ -1,16 +1,16 @@
 .third-header {
-  height: 70px;
+  height: 80px;
   width: 100vw;
-  padding: 2vh 4vw 2vh 4vw;
+  padding: 2vh 2vw 2vh 2vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: skyblue;
 }
 
-.third-header-logo a{
-  font-size: 30px;
-  color: black;
+.header-logo {
+  height: 65px;
+  width: 200px;
 }
 
 .third-header-contents {
@@ -25,15 +25,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #00f7ff;
-  border: 3px solid #f5f5f5;
-  border-style: groove;
+  background: skyblue;
   text-decoration: none;
   color: black;
   line-height: 48px;
   font-size: 15px;
   cursor: pointer;
   margin-right: 7vw;
+  border: 2px solid #f5f5f5;
+  border-style: groove;
+  border-radius: 10px;
 }
 
 .user-exit {
@@ -43,4 +44,5 @@
 
 .user-edit {
   width: 40px;
+  margin-right: 20px;
 }
